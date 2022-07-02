@@ -1,0 +1,394 @@
+/* Reset CSS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Common */
+
+.clear {
+    clear: both;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+
+/* Main */
+
+#header {
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li a {
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    display: block;
+}
+
+#nav>li:hover>a,
+.places-buy-btn:hover,
+#nav .subnav li:hover a,
+.contact-form .form-submit-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav>li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+}
+
+#nav .subnav a {
+    color: #000;
+    padding-left: 16px;
+    line-height: 38px;
+}
+
+.nav-arrow-down {
+    font-size: 12px;
+}
+
+.search-btn {
+    float: right;
+}
+
+.search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.search-btn .search-icon {
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.mobile-menu-btn {
+    display: none;
+}
+
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/img/slider/slider1.jpg) top center / cover no-repeat;
+}
+
+#slider .text-content {
+    color: #fff;
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    text-align: center;
+    text-shadow: 0 0 5px #000;
+}
+
+#slider .text-heading {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#slider .text-description {
+    margin-top: 25px;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+#content .content-section {
+    padding: 64px 16px;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    margin: 10px 0;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+#content .section-sub-heading {
+    opacity: 0.6;
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+#content .about-description {
+    text-align: justify;
+    font-size: 15px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+#content .member-list {
+    margin-top: 48px;
+}
+
+#content .member-name {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+#content .member-img {
+    margin-bottom: 16px;
+    width: 154px;
+    border-radius: 4px;
+}
+
+#content .tour-section {
+    background-color: #000;
+    color: #fff !important;
+}
+
+.ticket-list {
+    background-color: #fff;
+    color: #d2cdcd;
+    font-size: 15px;
+    margin-top: 35px;
+}
+
+.ticket-list li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+.ticket-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    font-size: 15px;
+    padding: 3px 8px;
+    margin-left: 16px;
+    font-family: sans-serif;
+}
+
+
+/* Ticket */
+
+.ticket-list .quantity {
+    float: right;
+    color: #fff;
+    background-color: #000;
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -2px;
+}
+
+
+/* Places */
+
+.places-list {
+    margin-top: 32px;
+}
+
+.places-item {
+    margin-bottom: 48px;
+}
+
+.places-img {
+    width: 100%;
+    display: block;
+}
+
+.places-img:hover {
+    opacity: 0.6;
+}
+
+.places-body {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    font-family: sans-serif;
+    padding: 16px;
+}
+
+.places-heading {
+    font-weight: bold;
+}
+
+.places-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.places-desc {
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+.places-buy-btn {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #000;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* Contact */
+
+.contact-content {
+    padding: 32px 0;
+}
+
+.contact-content .contact-info {
+    font-size: 18px;
+    font-family: sans-serif;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.contact-content i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form .form-control {
+    padding: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+}
+
+.contact-form .form-submit-btn {
+    margin: 16px 0;
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.map-section img {
+    width: 100%;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    margin: 15px 0;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
